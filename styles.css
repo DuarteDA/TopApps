@@ -1,0 +1,229 @@
+body{
+    margin: 0;
+    background-color: rgb(247, 244, 244);
+    font-family: 'Gemunu Libre', sans-serif;
+}
+
+header{
+    display: flex;
+    height: 85px;
+    background-color:#212f3c;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+
+p{
+    color: white;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: -30px;
+}
+
+h1{
+    text-align: center;
+    padding: 30px;
+    font-size: 45px;
+}
+
+.parrafo-principal{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #212f3c;
+    font-size: 23px;
+    padding: 20px;
+    margin: 50px;
+}
+
+.parrafos{
+    background-color: #212f3c; 
+    margin: 48px;
+    padding: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    display:flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+#capturas{
+    border-radius: 10px;
+    border: 1px;
+}
+
+.imagenes{
+    text-align: center;
+}
+
+.links{
+    text-decoration: none;
+    color: rgb(255, 242, 242);
+    font-size: 23px;
+}
+
+img.zoom {
+    width: 380px;
+    height: 250px;
+    transition: all .4s ease-in-out;
+}
+
+.transition {
+    -webkit-transform: scale(1.1); 
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.3);
+}
+
+button{
+    font-size: 1em;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: #212f3c;
+}
+
+.boton{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+button:hover{
+    background-color: #3f3e3e;
+}
+
+/*boton up*/
+#button-up{
+    width: 40px;
+    height: 40px;
+    background: #010d1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    position: fixed;
+    bottom: 50px;
+    right: 25px;
+    cursor: pointer;
+    border: 4px solid transparent;
+    transition: all 300ms ease;
+    transform: scale(0);
+}
+
+#button-up:hover{
+    transform:scale(1.1) ;
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+/*Pie de Página/ footer*/
+#pregunta{
+    font-family:sans-serif;
+    font-size: 18px;
+    color: antiquewhite;
+}
+
+.pie-pagina{
+    width: 100%;
+    background-color: #212f3c;
+}
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img{
+    width: 220px;
+
+}
+
+.pie-pagina .grupo-1 .box h2{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    margin-right:10px;
+    background-color: #0d2033;
+    text-align: center;
+    transform: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: #0e76a8;
+}
+
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+}
+
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+
+.sobre-nosotros{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+}
+
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
+
+@media screen and (max-width:712px){
+    header{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0px 30px;
+    }
+}
+
+@media screen and (max-width:712px){
+    footer{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0px 30px;
+    }
+}
